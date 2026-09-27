@@ -16,4 +16,4 @@ FitLog is a dark, modern workout library app built with Next.js. It lets users b
 2. Detailed workout pages with instructions and spec cards
 3. Daily plan and saved-items tracking using localStorage
 4. Toast notifications for user actions
-5. Loading and 404 states for smoother UX
+5. Loading and 404 states
