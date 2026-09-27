@@ -1,4 +1,4 @@
-Project Name- FitLog
+## Project Name- FitLog
 
 FitLog is a dark, modern workout library app built with Next.js. It lets users browse exercise cards, add lifts to a daily plan, save workouts for later, and track a simple plan summary in a clean gym-focused interface.
 
