@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+
 import { useEffect, useState } from "react";
 import { addWorkoutId, getWorkoutIds, type Workout } from "../../lib/fitlog";
 
@@ -105,7 +105,6 @@ export function WorkoutDetailClient({ workout }: { workout: Workout }) {
             ))}
           </ol>
         </div>
-
         <div className="flex flex-col gap-3 sm:flex-row">
           <button onClick={addToPlan} className="inline-flex items-center justify-center gap-2 rounded-full bg-lime-300 px-5 py-3 font-semibold text-[#10151d]">
             Add to today&apos;s plan
