@@ -75,7 +75,7 @@ export function removeWorkoutId(type: WorkoutListTab, id:number) {
 }
 
 export function fetchWorkouts():Promise<Workout[]> {
-  return fetch("https://api.abcz.workers.dev/api/fitlog", { cache: "no-store" }).then((response) => {
+  return fetch("https://api.api-store.workers.dev/api/fitlog", { cache: "no-store" }).then((response) => {
     if (!response.ok) {
       throw new Error("Failed to load workouts");
     }
@@ -85,7 +85,7 @@ export function fetchWorkouts():Promise<Workout[]> {
 }
 
 export function fetchWorkoutById(id:string|number):Promise<Workout> {
-  return fetch(`https://api.abcz.workers.dev/api/fitlog/${id}`,{cache:"no-store"}).then((response) => {
+  return fetch(`https://api.api-store.workers.dev/api/fitlog/${id}`,{cache:"no-store"}).then((response) => {
     if (!response.ok) {
       throw new Error("Failed to load workout details");
     }
