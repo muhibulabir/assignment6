@@ -113,7 +113,7 @@ export default function HomePage() {
         ) : (
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
             {libraryWorkouts.map((workout) => (
-              <Link key={workout.id} href={`/workouts/${workout.id}`} className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-[#111821] shadow-[0_0_0_1px_rgba(255,255,255,0.02)]">
+              <Link key={workout.id} href={`/workout/${workout.id}`} className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-[#111821] shadow-[0_0_0_1px_rgba(255,255,255,0.02)]">
                 <div className="relative h-52 w-full overflow-hidden">
                   <Image src={workout.image} alt={workout.name} fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw" />
                 </div>

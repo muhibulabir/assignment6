@@ -167,7 +167,7 @@ export default function MyPlanPage() {
                 </div>
 
                 <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                  <Link href={`/workouts/${workout.id}`} className="flex-1 rounded-full border border-white/15 px-3 py-2 text-center text-sm font-semibold text-white">
+                  <Link href={`/workout/${workout.id}`} className="flex-1 rounded-full border border-white/15 px-3 py-2 text-center text-sm font-semibold text-white">
                     View Details
                   </Link>
                   <button onClick={() => markDone(workout.id)} className="rounded-full bg-lime-300 px-3 py-2 text-sm font-semibold text-slate-900">

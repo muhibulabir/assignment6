@@ -36,7 +36,13 @@ export function AppShell({ children }: { children: ReactNode }) {
               <span className="text-lg font-black uppercase tracking-[0.15em] text-white sm:text-xl">FitLog</span>
             </Link>
 
-            <div className="flex items-center gap-2 text-xs font-semibold uppercase md:hidden">
+            <div className="flex flex-wrap items-center justify-end gap-2 text-[10px] font-semibold uppercase md:hidden">
+              <Link href="/" className={active === "workout" ? "rounded-full bg-lime-300 px-2.5 py-1.5 text-[#10151d]" : "rounded-full border border-white/40 px-2.5 py-1.5 text-white"}>
+                Workout
+              </Link>
+              <Link href="/my-plan" className={active === "my-plan" ? "rounded-full bg-lime-300 px-2.5 py-1.5 text-[#10151d]" : "rounded-full border border-white/40 px-2.5 py-1.5 text-white"}>
+                My Plan
+              </Link>
               <Link href="/my-plan" className="rounded-full bg-lime-300 px-2.5 py-1.5 text-[#10151d]">
                 {planCount} Plan
               </Link>
